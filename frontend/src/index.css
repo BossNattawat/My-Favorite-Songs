@@ -4,6 +4,34 @@
 }
 
 body {
-  font-family: "Comfortaa", sans-serif;
+  font-family: "Andada Pro", serif;
   font-optical-sizing: auto;
+}
+
+nav {
+  background: url("./assets/grain.png") repeat;
+  background-color: #78BBBB;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+}
+
+#hero-section {
+  background: url("./assets/grain.png") repeat;
+  background-color: #78BB;
+}
+
+#featured-song {
+  background: url("./assets/grain.png") repeat;
+  background-color: #E6E1D0;
+}
+
+#bottom-dashed {
+  margin: 0;
+    border-top: 1px dashed rgba(0, 0, 0, 0.25);
+    border-bottom: 1px dashed rgba(255, 255, 255, 0.25);
+    position: absolute;
+    bottom: 10px;
+    background-color: transparent;
+    z-index: 10;
+    width: 100%;
+    height: 0;
 }

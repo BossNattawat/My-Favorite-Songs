@@ -1,4 +1,4 @@
-import { AlignJustify, Music } from "lucide-react";
+import { AlignJustify } from "lucide-react";
 import { Link } from "react-router-dom";
 
 const navItems = [
@@ -11,8 +11,8 @@ const navItems = [
 function Navbar() {
 
   return (
-    <div className="navbar bg-base-100 shadow-sm">
-      <div className="navbar-start">
+    <nav className="navbar md:p-8 border-b border-dashed border-gray-500">
+      <div className="navbar-start w-full">
         <div className="dropdown">
           <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
             <AlignJustify />
@@ -28,22 +28,20 @@ function Navbar() {
             ))}
           </ul>
         </div>
-        <a className="btn btn-ghost text-xl md:text-2xl font-bold">
-            <Music size={30}/>
+        <Link to={"/"} className="text-xl w-full text-[#F6EDD8] md:text-5xl font-bold flex gap-x-3">
             My Favorite Songs
-            <Music size={30}/>
-        </a>
+        </Link>
       </div>
-      <div className="navbar-end hidden lg:flex">
+      <div className="navbar-end hidden lg:flex w-full">
         <ul className="menu menu-horizontal px-1">
           {navItems.map((item, index) => (
             <li key={index}>
-              <Link to={item.href} className="text-lg">{item.name}</Link>
+              <Link to={item.href} className="md:text-2xl xl:text-3xl text-[#F6EDD8] font-semibold">{item.name}</Link>
             </li>
           ))}
         </ul>
       </div>
-    </div>
+    </nav>
   );
 }
 
