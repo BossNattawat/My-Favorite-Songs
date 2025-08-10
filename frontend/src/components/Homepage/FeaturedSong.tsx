@@ -49,13 +49,14 @@ function FeaturedSong() {
       <div className="grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 gap-3">
         {mockSongData.map((song) => (
           <div
+            id="card"
             key={song.id}
-            className="flex flex-col lg:flex-row border-4 border-[#d35244] rounded-lg shadow-xs p-4"
+            className="flex flex-col lg:flex-row bg-[#eeeeee] rounded-lg shadow-xs p-4"
           >
             <img
               src="https://placehold.co/200"
               alt="Album Art"
-              className="border-3 border-[#03A6A1] mb-4 lg:mb-0 lg:mr-6"
+              className="border-3 border-[#03A6A1] mb-4 lg:mb-0 lg:mr-6 rounded-lg"
             />
             <div>
               <h3 className="text-[#d35244] text-2xl mb-2">“{song.name}”</h3>

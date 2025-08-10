@@ -14,7 +14,7 @@ function Navbar() {
     <nav className="navbar md:p-8 border-b border-dashed border-gray-500">
       <div className="navbar-start w-full">
         <div className="dropdown">
-          <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
+          <div tabIndex={0} role="button" className="btn text-[#F6EDD8] btn-ghost lg:hidden">
             <AlignJustify />
           </div>
           <ul
