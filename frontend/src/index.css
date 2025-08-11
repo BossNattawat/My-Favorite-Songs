@@ -24,7 +24,7 @@ footer {
   background-color: #78BB;
 }
 
-#featured-song {
+#featured-song, #mood_filter {
   background: url("./assets/grain.png") repeat;
   background-color: #E6E1D0;
 }

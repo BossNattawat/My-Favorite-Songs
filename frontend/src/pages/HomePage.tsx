@@ -9,7 +9,7 @@ function HomePage() {
       {/* Featured Song Card */}
       <FeaturedSong/>
       {/* Mood Filter */}
-      <section className="p-8">
+      <section id="mood_filter" className="p-8">
         <h2 className="text-2xl font-semibold mb-4 pb-2 border-b-3 border-[#383a3c] flex gap-x-3">
           <Disc size={30}/>
           Filter by Mood

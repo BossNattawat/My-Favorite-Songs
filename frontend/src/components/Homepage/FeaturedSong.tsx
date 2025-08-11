@@ -1,4 +1,5 @@
 import { Headphones } from "lucide-react";
+import Card from "./Card";
 
 const mockSongData = [
   {
@@ -48,39 +49,7 @@ function FeaturedSong() {
       </h2>
       <div className="grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 gap-3">
         {mockSongData.map((song) => (
-          <div
-            id="card"
-            key={song.id}
-            className="flex flex-col lg:flex-row bg-[#eeeeee] rounded-lg shadow-xs p-4"
-          >
-            <img
-              src="https://placehold.co/200"
-              alt="Album Art"
-              className="border-3 border-[#03A6A1] mb-4 lg:mb-0 lg:mr-6 rounded-lg"
-            />
-            <div>
-              <h3 className="text-[#d35244] text-2xl mb-2">“{song.name}”</h3>
-              <p className="text-[#03A6A1] text-lg mb-2">
-                by {song.artist} — Genre: {song.genre}
-              </p>
-              <div className="flex gap-2 mb-4">
-                <span className="px-2 py-1 border border-[#03A6A1] text-[#03A6A1] text-xs">
-                  Warm
-                </span>
-                <span className="px-2 py-1 border border-[#FFA673] text-[#FFA673] text-xs">
-                  Nostalgic
-                </span>
-              </div>
-              <div className="flex gap-2">
-                <button className="px-3 py-1 bg-[#03A6A1] text-white border border-[#E68966] text-sm">
-                  View Lyrics
-                </button>
-                <button className="px-3 py-1 bg-[#FFA673] text-white border border-[#E68966] text-sm">
-                  Play Preview
-                </button>
-              </div>
-            </div>
-          </div>
+          <Card key={song.id} song={song}/>
         ))}
       </div>
     </section>
